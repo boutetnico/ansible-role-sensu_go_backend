@@ -23,7 +23,7 @@ Role Variables
 |---------------------------------|----------|---------------------------------|-----------|--------------------------------------------------|
 | sensu_backend_docker_image      | true     | `sensu/sensu`                   | string    |                                                  |
 | sensu_backend_docker_tag        | true     | `latest`                        | string    | https://hub.docker.com/r/sensu/sensu/tags        |
-| sensu_backend_docker_env        | true     | `{}`                            | dict      |                                                  |
+| sensu_backend_docker_env        | true     |                                 | dict      | See `defaults/main.yml`.                         |
 | sensu_backend_host_data_path    | true     | `/var/lib/sensu`                | string    | Path to files on host for persistence.           |
 | sensu_backend_log_level         | true     | `warn`                          | string    | Values: panic, fatal, error, warn, info, debug.  |
 | sensu_backend_webui_port        | true     | `3000`                          | int       | Sensu web UI.                                    |

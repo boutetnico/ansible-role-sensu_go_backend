@@ -2,7 +2,9 @@
 sensu_backend_docker_image: sensu/sensu
 sensu_backend_docker_tag: latest
 
-sensu_backend_docker_env: {}
+sensu_backend_docker_env:
+  SENSU_BACKEND_CLUSTER_ADMIN_USERNAME: admin
+  SENSU_BACKEND_CLUSTER_ADMIN_PASSWORD: P@ssw0rd!
 
 sensu_backend_host_data_path: /var/lib/sensu
 
