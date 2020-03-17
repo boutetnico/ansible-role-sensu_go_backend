@@ -1,7 +1,13 @@
 ansible-role-sensu-go-backend
 =============================
 
-This role installs Sensu Go backend through Docker.
+This role installs [Sensu Go backend](https://docs.sensu.io/sensu-go/latest/reference/backend/) through Docker.
+
+It is part of a family of Ansible roles allowing to setup and configure Sensu Go components:
+
+- [ansible-role-sensu-go-agent](https://github.com/boutetnico/ansible-role-sensu-go-agent)
+- [ansible-role-sensu-go-cli](https://github.com/boutetnico/ansible-role-sensu-go-cli)
+- [ansible-role-sensu-go-backend](https://github.com/boutetnico/ansible-role-sensu-go-backend)
 
 Requirements
 ------------
