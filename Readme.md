@@ -25,17 +25,17 @@ Supported Platforms
 Role Variables
 --------------
 
-| Variable                        | Required | Default                         | Choices   | Comments                                         |
-|---------------------------------|----------|---------------------------------|-----------|--------------------------------------------------|
-| sensu_backend_docker_image      | true     | `sensu/sensu`                   | string    |                                                  |
-| sensu_backend_docker_tag        | true     | `latest`                        | string    | https://hub.docker.com/r/sensu/sensu/tags        |
-| sensu_backend_docker_env        | true     |                                 | dict      | See `defaults/main.yml`.                         |
-| sensu_backend_host_data_path    | true     | `/var/lib/sensu`                | string    | Path to files on host for persistence.           |
-| sensu_backend_log_level         | true     | `warn`                          | string    | Values: panic, fatal, error, warn, info, debug.  |
-| sensu_backend_webui_port        | true     | `3000`                          | int       | Sensu web UI.                                    |
-| sensu_backend_api_port          | true     | `8080`                          | int       | Sensu API used by sensuctl, plugins.             |
-| sensu_backend_websocket_port    | true     | `8081`                          | int       | WebSocket API used by Sensu agents.              |
-| sensu_backend_restart_policy    | true     | `unless-stopped`                | string    |                                                  |
+| Variable                        | Required | Default                   | Choices   | Comments                                           |
+|---------------------------------|----------|---------------------------|-----------|----------------------------------------------------|
+| sensu_backend_docker_image      | true     | `sensu/sensu`             | string    |                                                    |
+| sensu_backend_docker_tag        | true     | `latest`                  | string    | https://hub.docker.com/r/sensu/sensu/tags          |
+| sensu_backend_docker_env        | true     |                           | dict      | See `defaults/main.yml`.                           |
+| sensu_backend_host_data_path    | true     | `/var/lib/sensu`          | string    | Path to files on host for persistence.             |
+| sensu_backend_log_level         | true     | `warn`                    | string    | Values: panic, fatal, error, warn, info, debug.    |
+| sensu_backend_network_mode      | true     | `bridge`                  | string    | `bridge`, `host`, `none` or `container:<name|id>`. |
+| sensu_backend_ports             | true     |                           | list      | See `defaults/main.yml`.                           |
+| sensu_backend_container_state   | true     | `started`                 | string    | `absent`, `present`, `stopped` or `started`.       |
+| sensu_backend_restart_policy    | true     | `unless-stopped`          | string    | `no`, `on-failure`, `always`, `unless-stopped`.    |
 
 Dependencies
 ------------

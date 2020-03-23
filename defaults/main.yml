@@ -10,8 +10,13 @@ sensu_backend_host_data_path: /var/lib/sensu
 
 sensu_backend_log_level: warn
 
-sensu_backend_webui_port: 3000
-sensu_backend_api_port: 8080
-sensu_backend_websocket_port: 8081
+sensu_backend_network_mode: bridge
+
+sensu_backend_ports:
+  - 3000:3000
+  - 8080:8080
+  - 8081:8081
+
+sensu_backend_container_state: started
 
 sensu_backend_restart_policy: unless-stopped
