@@ -1,3 +1,6 @@
+[![tests](https://github.com/boutetnico/ansible-role-sensu-go-backend/workflows/Test%20ansible%20role/badge.svg)](https://github.com/boutetnico/ansible-role-sensu-go-backend/actions?query=workflow%3A%22Test+ansible+role%22)
+[![Ansible Galaxy](https://img.shields.io/badge/galaxy-boutetnico.sensu_go_backend-blue.svg)](https://galaxy.ansible.com/boutetnico/sensu_go_backend)
+
 ansible-role-sensu-go-backend
 =============================
 
@@ -12,7 +15,7 @@ It is part of a family of Ansible roles allowing to setup and configure Sensu Go
 Requirements
 ------------
 
-Ansible 2.6 or newer.
+Ansible 2.7 or newer.
 
 Supported Platforms
 -------------------
@@ -25,17 +28,17 @@ Supported Platforms
 Role Variables
 --------------
 
-| Variable                        | Required | Default                   | Choices   | Comments                                           |
-|---------------------------------|----------|---------------------------|-----------|----------------------------------------------------|
-| sensu_backend_docker_image      | true     | `sensu/sensu`             | string    |                                                    |
-| sensu_backend_docker_tag        | true     | `latest`                  | string    | https://hub.docker.com/r/sensu/sensu/tags          |
-| sensu_backend_docker_env        | true     |                           | dict      | See `defaults/main.yml`.                           |
-| sensu_backend_host_data_path    | true     | `/var/lib/sensu`          | string    | Path to files on host for persistence.             |
-| sensu_backend_log_level         | true     | `warn`                    | string    | Values: panic, fatal, error, warn, info, debug.    |
-| sensu_backend_network_mode      | true     | `bridge`                  | string    | `bridge`, `host`, `none` or `container:<name|id>`. |
-| sensu_backend_ports             | true     |                           | list      | See `defaults/main.yml`.                           |
-| sensu_backend_container_state   | true     | `started`                 | string    | `absent`, `present`, `stopped` or `started`.       |
-| sensu_backend_restart_policy    | true     | `unless-stopped`          | string    | `no`, `on-failure`, `always`, `unless-stopped`.    |
+| Variable                        | Required | Default            | Choices   | Comments                                           |
+|---------------------------------|----------|--------------------|-----------|----------------------------------------------------|
+| sensu_backend_docker_image      | true     | `sensu/sensu`      | string    |                                                    |
+| sensu_backend_docker_tag        | true     | `latest`           | string    | https://hub.docker.com/r/sensu/sensu/tags          |
+| sensu_backend_docker_env        | true     |                    | dict      | See `defaults/main.yml`.                           |
+| sensu_backend_host_data_path    | true     | `/var/lib/sensu`   | string    | Path to files on host for persistence.             |
+| sensu_backend_log_level         | true     | `warn`             | string    | Values: panic, fatal, error, warn, info, debug.    |
+| sensu_backend_network_mode      | true     | `bridge`           | string    | `bridge`, `host`, `none` or `container:<name|id>`. |
+| sensu_backend_ports             | true     |                    | list      | See `defaults/main.yml`.                           |
+| sensu_backend_container_state   | true     | `started`          | string    | `absent`, `present`, `stopped` or `started`.       |
+| sensu_backend_restart_policy    | true     | `unless-stopped`   | string    | `no`, `on-failure`, `always`, `unless-stopped`.    |
 
 Dependencies
 ------------

@@ -1,9 +1,10 @@
 ---
 galaxy_info:
+  role_name: sensu-go-backend
   author: Nicolas Boutet
   description: Install Sensu Go backend through Docker.
   license: MIT
-  min_ansible_version: 2.6
+  min_ansible_version: 2.7
   platforms:
     - name: Ubuntu
       versions:
@@ -11,10 +12,12 @@ galaxy_info:
         - focal
     - name: Debian
       versions:
-        - stretch
         - buster
+        - stretch
   galaxy_tags:
+    - docker
+    - monitoring
     - sensu
     - sensugo
-    - docker
+    - server
 dependencies: []
