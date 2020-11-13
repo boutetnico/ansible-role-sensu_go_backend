@@ -18,4 +18,4 @@
     images: true
     images_filters:
       dangling: true
-      label: "name={{ sensu_backend_docker_image }}"
+      label: "name={{ sensu_backend_docker_image }}"  # noqa 206
