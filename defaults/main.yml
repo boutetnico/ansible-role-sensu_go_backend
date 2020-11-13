@@ -1,6 +1,7 @@
 ---
 sensu_backend_docker_image: sensu/sensu
 sensu_backend_docker_tag: latest
+sensu_backend_docker_pull: false
 
 sensu_backend_docker_env:
   SENSU_BACKEND_CLUSTER_ADMIN_USERNAME: admin

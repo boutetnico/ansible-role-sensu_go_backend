@@ -7,7 +7,15 @@
     name: sensu-backend
     network_mode: "{{ sensu_backend_network_mode }}"
     ports: "{{ sensu_backend_ports }}"
+    pull: "{{ sensu_backend_docker_pull }}"
     restart_policy: "{{ sensu_backend_restart_policy }}"
     volumes:
       - "{{ sensu_backend_host_data_path }}:/var/lib/sensu"
     state: "{{ sensu_backend_container_state }}"
+
+- name: Remove dangling docker image
+  docker_prune:
+    images: true
+    images_filters:
+      dangling: true
+      label: "name={{ sensu_backend_docker_image }}"  # noqa 206
