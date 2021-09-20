@@ -1,6 +1,7 @@
 ---
 galaxy_info:
-  role_name: sensu-go-backend
+  role_name: sensu_go_backend
+  namespace: boutetnico
   author: Nicolas Boutet
   description: Install Sensu Go backend through Docker.
   license: MIT
