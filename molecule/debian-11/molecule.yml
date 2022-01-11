@@ -1,6 +1,6 @@
 ---
 platforms:
-  - name: ansible-role-sensu-go-backend-debian-9
-    image: debian:9
+  - name: ansible-role-sensu-go-backend-debian-11
+    image: debian:11
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
