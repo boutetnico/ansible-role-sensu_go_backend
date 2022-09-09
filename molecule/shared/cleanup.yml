@@ -4,7 +4,7 @@
   connection: local
   gather_facts: false
   tasks:
-    - name: delete sensu backend container
-      docker_container:
+    - name: Delete sensu backend container
+      community.general.docker_container:
         name: sensu-backend
         state: absent
