@@ -1,6 +1,6 @@
 ---
 - name: Ensure sensu container exists
-  docker_container:
+  community.general.docker_container:
     command: sensu-backend start --state-dir /var/lib/sensu/sensu-backend --log-level {{ sensu_backend_log_level }}
     env: "{{ sensu_backend_docker_env }}"
     image: "{{ sensu_backend_docker_image }}:{{ sensu_backend_docker_tag }}"
@@ -14,7 +14,7 @@
     state: "{{ sensu_backend_container_state }}"
 
 - name: Remove dangling docker image
-  docker_prune:
+  community.general.docker_prune:
     images: true
     images_filters:
       dangling: true
