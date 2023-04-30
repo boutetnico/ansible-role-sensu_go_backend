@@ -6,11 +6,6 @@ dependency:
 driver:
   name: docker
 
-lint: |
-    yamllint .
-    ansible-lint
-    flake8
-
 provisioner:
   name: ansible
   playbooks:
