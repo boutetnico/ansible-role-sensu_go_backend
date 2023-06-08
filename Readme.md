@@ -1,16 +1,16 @@
-[![tests](https://github.com/boutetnico/ansible-role-sensu-go-backend/workflows/Test%20ansible%20role/badge.svg)](https://github.com/boutetnico/ansible-role-sensu-go-backend/actions?query=workflow%3A%22Test+ansible+role%22)
+[![tests](https://github.com/boutetnico/ansible-role-sensu_go_backend/workflows/Test%20ansible%20role/badge.svg)](https://github.com/boutetnico/ansible-role-sensu_go_backend/actions?query=workflow%3A%22Test+ansible+role%22)
 [![Ansible Galaxy](https://img.shields.io/badge/galaxy-boutetnico.sensu_go_backend-blue.svg)](https://galaxy.ansible.com/boutetnico/sensu_go_backend)
 
-ansible-role-sensu-go-backend
+ansible-role-sensu_go_backend
 =============================
 
 This role installs [Sensu Go backend](https://docs.sensu.io/sensu-go/latest/reference/backend/) through Docker.
 
 It is part of a family of Ansible roles allowing to setup and configure Sensu Go components:
 
-- [ansible-role-sensu-go-agent](https://github.com/boutetnico/ansible-role-sensu-go-agent)
-- [ansible-role-sensu-go-cli](https://github.com/boutetnico/ansible-role-sensu-go-cli)
-- [ansible-role-sensu-go-backend](https://github.com/boutetnico/ansible-role-sensu-go-backend)
+- [ansible-role-sensu_go_agent](https://github.com/boutetnico/ansible-role-sensu_go_agent)
+- [ansible-role-sensu_go_cli](https://github.com/boutetnico/ansible-role-sensu_go_cli)
+- [ansible-role-sensu_go_backend](https://github.com/boutetnico/ansible-role-sensu_go_backend)
 
 Requirements
 ------------
@@ -49,7 +49,7 @@ Example Playbook
 
     - hosts: all
       roles:
-        - role: ansible-role-sensu-go-backend
+        - role: ansible-role-sensu_go_backend
 
 Testing
 -------
